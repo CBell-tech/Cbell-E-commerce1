@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head><link rel="stylesheet" href="style.css">
+<body>
+<nav class="bgall">
+    <div class="flexheader">
+        <h2>SNEAKERS</h2>
+
+        <div class="navlinks">
+            <a href="">Collections</a>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+
+        <div id="cartWrapper" class="cart-wrapper">
+            <h2 id="cartIcon" class="cart-icon" role="button" aria-label="Open cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartBadge" class="cart-badge">0</span>
+            </h2>
+            <div id="cartDropdown" class="cart-dropdown hidden" aria-live="polite">
+                <div id="cartContent" class="cart-content"></div>
+            </div>
+        </div>
+
+    </div><!-- flexheader -->
+    <hr>
+
+
+    <div class="body-flx">
+        <div class="product1"><img src="pictures/image-product-1.jpg" alt="" width="500px" height="500px"></div>
+
+
+        <div class="description">
+            <h4> SNEAKER COMPANY</h4>
+            <h1> Fall Limited Edition Sneakers</h1>
+            <p> These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <h2>$125.00 <span>50%</span></h2>
+            <h3><del>$250.00</del></h3>
+
+
+            <div class="btn-flex">
+            <div class="btn1">
+                <button class="edi" onclick="decrease()">-</i></button>
+                <button class="zero" id="counter">0</button>
+                <button class="edi" onclick="increase()">+</i></button>
+            </div>
+            
+            <div class="btn2">
+                <button id="addToCartBtn" class="addtocart"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+
+        </div><!-- end of btn-flex -->
+        </div>
+    </div><!-- end of body-flx -->
+
+    <div class="images-flx">
+        <div class="img1"><img src="pictures/image-product-1-thumbnail.jpg" alt="" width="120px" height="120px"></div>
+        <div class="img2"><img src="pictures/image-product-2-thumbnail.jpg" alt="" width="120px" height="120px"></div>
+        <div class="img3"><img src="pictures/image-product-3-thumbnail.jpg" alt="" width="120px" height="120px"></div>
+        <div class="img4"><img src="pictures/image-product-4-thumbnail.jpg" alt="" width="120px" height="120px"></div>
+
+    </div>
+
+    <div class="footer">
+        <p>Challenge by >. Coded by Charles</p>
+    </div>
+
+
+
+
+
+</nav><!-- bgall -->
+    
+</body>
+<script src="script.js"></script>
+</html>
